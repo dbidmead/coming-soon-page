@@ -88,8 +88,6 @@ body {
     color: var(--email-form-color);
 }
 
-/* USE PSEUDOELEMENTS FOR VALIDATION STYLING */
-
 #submit-btn {
     display: flex;
     font-size: 16px;
@@ -112,6 +110,33 @@ body {
     background: var(--btn-gradient-hover);
 }
 
+#valid-icon {
+    color: #50d850;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6.3rem;
+    transition: all 0.2s ease;
+    opacity: 0;
+}
+
+#invalid-icon {
+    color: var(--focus-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6.3rem;
+    transition: all 0.2s ease;
+    opacity: 0;
+}
+
+#error {
+    font-size: 12px;
+    padding-left: 1.75rem;
+    padding-top: 0.75em;
+    color: var(--focus-color);
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -122,5 +147,5 @@ body {
 }
 
 .attribution a { 
-    color: var(--email-focus-color); 
+    color: var(--focus-color); 
 }
