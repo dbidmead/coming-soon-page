@@ -47,7 +47,6 @@ body {
 }
 
 #logo {
-    /* transform: scale(25%); */
     align-self: flex-start;
     justify-self: flex-start;
     margin-top: 25px;
